@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư - Báo cáo kênh - Kero</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 680px; margin: 0 auto; padding: 24px 16px; line-height: 1.6; color: #1f2328; background: #fff; }
+  h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 24px; } a { color: #0969da; }
+</style>
+</head>
+<body>
+<h1>Chính sách quyền riêng tư</h1>
+<p>Áp dụng cho ứng dụng "Báo cáo kênh - Kero". Cập nhật: 23/11/2026.</p>
+
+<h2>1. Dữ liệu được truy cập</h2>
+<p>Khi chủ kênh bấm kết nối, ứng dụng xin 3 quyền <b>chỉ đọc</b> của Google:</p>
+<ul>
+  <li><code>youtube.readonly</code>: tên, ID kênh, danh sách và tiêu đề video.</li>
+  <li><code>yt-analytics.readonly</code>: số liệu Analytics (lượt xem, thời gian xem, nguồn lưu lượng, nhân khẩu học tổng hợp, quốc gia, thiết bị, lượt hiển thị).</li>
+  <li><code>yt-analytics-monetary.readonly</code>: doanh thu ước tính của kênh.</li>
+</ul>
+<p>Ứng dụng không truy cập Gmail, Drive, danh bạ hay dữ liệu nào khác, và không thể đăng, sửa hoặc xoá nội dung.</p>
+
+<h2>2. Mục đích sử dụng</h2>
+<p>Dữ liệu chỉ dùng để Kero lập báo cáo hiệu suất hằng tháng cho chính kênh đó trong khuôn khổ hợp tác quản lý kênh. Không dùng cho quảng cáo, không bán, không chuyển cho bên thứ ba.</p>
+
+<h2>3. Lưu trữ và bảo mật</h2>
+<ul>
+  <li>Số liệu tổng hợp được lưu trong Google Sheet riêng của Kero, không chia sẻ công khai.</li>
+  <li>Mã truy cập (refresh token) được lưu trong vùng lưu trữ bảo mật của Google Apps Script thuộc tài khoản của Kero, không ghi ra bảng tính hay nhật ký.</li>
+  <li>Tài khoản quản trị được bảo vệ bằng xác minh 2 bước.</li>
+</ul>
+
+<h2>4. Thu hồi quyền và xoá dữ liệu</h2>
+<p>Chủ kênh có thể thu hồi quyền bất cứ lúc nào tại <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Sau khi thu hồi, ứng dụng không còn đọc được số liệu mới. Để yêu cầu xoá số liệu đã lưu, liên hệ Kero qua email bên dưới; yêu cầu được xử lý trong vòng 30 ngày.</p>
+
+<h2>5. Tuân thủ chính sách Google</h2>
+<p>Việc sử dụng và chuyển giao thông tin nhận từ API của Google tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, bao gồm các yêu cầu Limited Use. Ứng dụng sử dụng YouTube API Services; người dùng cũng chịu <a href="https://www.youtube.com/t/terms">Điều khoản dịch vụ của YouTube</a> và <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a>.</p>
+
+<h2>6. Liên hệ</h2>
+<p>Email: kerowong13@gmail.com</p>
+
+<hr>
+<div lang="en">
+<h2>English summary</h2>
+<p>"Báo cáo kênh - Kero" requests read-only access (youtube.readonly, yt-analytics.readonly, yt-analytics-monetary.readonly) solely to compile monthly performance reports for the connected channel under its management agreement with Kero. Data is not sold, shared with third parties, or used for advertising. Tokens are stored in Google Apps Script properties owned by Kero. Users can revoke access at any time at myaccount.google.com/permissions and request deletion by email. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. This app uses YouTube API Services; see the YouTube Terms of Service and the Google Privacy Policy.</p>
+</div>
+</body>
+</html>
